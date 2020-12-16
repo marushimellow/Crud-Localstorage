@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head>
+	<title>CRUD LocalStorage </title>
+	<script
+  src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+  crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="sty.css">
+</head>
+<body>
+<input type="button"  class="wprint" value="Print" onclick="window.print()"/>
+<input type="reset" class="resetx" value="Reset">
+<input type="button" class="deleteData" value="Delete All Data" onclick="deleteData();"/>
+
+	<form id="frmUser" autocomplete="off">
+			<section>
+				<h2>List Of Usernames</h2>
+			<fieldset>
+				<legend>Data form:</legend>
+				<ul>
+					<li>
+						<label for="txtFirstname">
+							<span>Firstname:</span>
+							<input type="text" id="txtFirstname"/>
+						</label>
+					</li>
+					<li>
+						<label for="txtLastname">
+							<span>Lastname:</span>
+							<input type="text" id="txtLastname"/>
+						</label>
+					</li>
+					<li>
+						<label for="txtUsername">
+							<span>Username:</span>
+		 					<input type="text" id="txtUsername"/>
+						</label>
+					</li>
+					<li>
+						<label for="txtEmail">
+							<span>Email:</span>
+							<input type="text" id="txtEmail"/>
+						</label>
+					</li>
+
+
+					<li>
+						<input type="submit" value="Save" id="btnSave"/>
+					</li>
+
+				</ul>
+			</fieldset>
+		</section>
+	</form>
+<hr>
+	<table id="tbList"> </table>
+</body>
+	<script src="inter.js"></script>
+</html>
