@@ -1,2 +1,3 @@
 # Crud-Localstorage
-save users in a localstorage
+Mar Miguel lopez
+Christopher Abcede
